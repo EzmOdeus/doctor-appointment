@@ -39,7 +39,7 @@ function DoctorList({ doctorList, head ='Popular Doctor'}: any) {
                     </Link>
                     </div>
                 )) : <>
-{             [1,2,3,4,5,6,7,8,9,10].map(e=> <Skeleton />)}
+{             [1,2,3,4,5,6,7,8,9,10].map(e=> <Skeleton key={e}/>)}
                 </>}
             </div>
         </div>

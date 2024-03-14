@@ -19,8 +19,8 @@ function MyBooking() {
 
   return (
     <div className='pt-20 h-[90vh]'><p className='pt-2 text-sky-800 font-extrabold text-4xl'>Booking</p>
-      {booking.map((item: any) => (
-        <div className='p-3  border-[1px] flex justify-between items-start'>
+      {booking.map((item: any,index:number) => (
+        <div className='p-3  border-[1px] flex justify-between items-start' key={index}>
         <Image
           className="rounded-full mb-2 object-cover  "
           src={item.attributes?.doctor?.data?.attributes?.image?.data?.attributes?.url}

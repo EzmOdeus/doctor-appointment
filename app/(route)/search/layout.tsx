@@ -3,7 +3,7 @@ import CategoryList from '@/app/_components/CategoryList'
 import Apis from '@/app/_utlis/Apis'
 import React, { useEffect, useState } from 'react'
 
-function page({ children }: any) {
+function Searchlayout({ children }: any) {
   const [Category, setCategory] = useState([])
   useEffect(() => { getCategorys_() }, [])
   const getCategorys_ = () => {
@@ -22,4 +22,4 @@ function page({ children }: any) {
   )
 }
 
-export default page
+export default Searchlayout
