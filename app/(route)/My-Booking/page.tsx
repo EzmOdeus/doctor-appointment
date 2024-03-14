@@ -11,7 +11,7 @@ function MyBooking() {
   const [booking,setbooking]=useState([])
   useEffect(()=>{getBookingList()},[user])
   const getBookingList = () => {
-    Apis.UserEmail(user?.email).then((res: any) => {
+    Apis.UserEmail(`${user?.given_name} ${user?.family_name}`).then((res: any) => {
       setbooking(res.data.data)
       console.log(res.data.data)
     })
