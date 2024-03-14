@@ -5,7 +5,7 @@ import Apis from '@/app/_utlis/Apis'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-function page({ params }: any) {
+function Detalis({ params }: any) {
   const [Doctor, setDoctor] = useState([])
   useEffect(() => { getDoctors_() }, [])
   const getDoctors_ = () => {
@@ -26,4 +26,4 @@ function page({ params }: any) {
   )
 }
 
-export default page
+export default Detalis

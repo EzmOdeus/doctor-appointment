@@ -6,7 +6,7 @@ import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
 import Image from 'next/image'
 import moment from 'moment'
 import CancleButton from './CancleButton'
-function page() {
+function MyBooking() {
   const { user } = useKindeBrowserClient()
   const [booking,setbooking]=useState([])
   useEffect(()=>{getBookingList()},[user])
@@ -41,4 +41,4 @@ function page() {
   )
 }
 
-export default page
+export default MyBooking

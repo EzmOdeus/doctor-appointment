@@ -3,7 +3,7 @@ import DoctorList from '@/app/_components/DoctorList'
 import Apis from '@/app/_utlis/Apis'
 import React, { useEffect, useState } from 'react'
 
-function page({ params }: any) {
+function Search({ params }: any) {
  
   const [Category, setCategory] = useState([])
   useEffect(() => { getCategorys_() }, [])
@@ -20,4 +20,4 @@ function page({ params }: any) {
   )
 }
 
-export default page
+export default Search
