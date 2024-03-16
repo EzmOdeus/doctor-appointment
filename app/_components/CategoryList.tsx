@@ -18,6 +18,7 @@ function CategoryList({ category }: any) {
     return (
 
         <div className='h-screen flex flex-col '>
+        
             <Command>
                 <CommandInput placeholder="Type a command or search..." />
                 <CommandList>
